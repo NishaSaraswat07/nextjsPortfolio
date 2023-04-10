@@ -1,0 +1,101 @@
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 700px;
+    background: #252525;
+    padding-top: 106px;
+    font-family: 'poppins-regular';
+    font-size: 26px;
+    font-weight: 400;
+}
+.hr hr{
+   
+    margin-top: -20px;
+}
+.hr h3{
+    margin-left: -100px;
+}
+.aboutPage hr{
+    width: 70px;
+    margin-left: 26px;
+}
+.aboutPage h2{
+    font-family: 'marker';
+    font-size: 36px;
+    font-weight: 400;
+    color: #FFB800;
+    margin: 30px 0 0px -200px;
+}
+.details p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin-left: 100px;
+}
+.details {
+    width: 500px;
+    height: auto;
+    margin-top: 45px;
+}
+.details h3{
+    margin: 50px 0 0 100px;
+    
+}
+.details hr{
+    margin-top: -20px;
+    margin-left: 120px;
+}
+.projectContainer{
+    background: #020202;
+  }
+  .skills li{
+      color: #FFB800;
+  }
+  
+  .skills ul{
+    display: flex;
+   align-items:center;
+   justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 140px;
+  }
+  .leftCard{
+    width: 330px;
+    height: 420px;
+    left: 244.91px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    margin-top: -700px;
+    margin-left: 50px;
+    
+  }
+  .backCard{
+    display: inline-block;
+    width: 330px;
+    height: 420px;
+    margin-left: 50px;
+    margin-top: -33%;
+    background: rgba(196, 196, 196, 0.25);
+    border-radius: 20px;
+    transform: rotate(-7.17deg);
+  }
+  .Cards{
+      margin-top: 100px;
+  }
+ .iconsContainer a{
+    margin-left: 20px;
+    width:50px;
+    height:50px;
+    padding: 10px;
+    background-color:#FFB800;
+    border-radius: 10px;
+    color: #020202;
+}
+.iconsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+} 
