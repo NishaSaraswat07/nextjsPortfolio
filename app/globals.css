@@ -144,7 +144,10 @@ header{
   align-content: center;
   color: #FFB800;
   font-family: 'poppins-medium';
-  margin:130px
+  margin:130px;
+}
+.notfound p:hover{
+  color: #fff;
 }
 @media (prefers-color-scheme: dark) {
   html {

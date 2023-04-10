@@ -6,7 +6,7 @@ function Pagenotfound() {
         <div className="notfound">
             <h1>Oooops!</h1>
             <h1>This file doesnot exists!</h1>
-            <p>Please go back <Link href="/">Home</Link></p>
+            <Link href="/"> <p>Please go back Home</p></Link>
         </div>
   )
 }
