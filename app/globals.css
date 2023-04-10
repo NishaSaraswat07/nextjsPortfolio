@@ -146,7 +146,6 @@ header{
   font-family: 'poppins-medium';
   margin:130px
 }
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
