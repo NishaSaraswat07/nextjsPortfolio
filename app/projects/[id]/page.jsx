@@ -1,14 +1,14 @@
 'use client'
 
 import React from 'react'
-import FaGithubAlt from 'react-icons/fa'
+import {FaGithubAlt} from 'react-icons/fa'
 import Image from 'next/image'
 import first from '/public/first.png'
 import second from '/public/second.png'
 import third from '/public/third.png'
 import fourth from '/public/fourth.png'
 import fifth from '/public/fifth.png'
-import HiOutlineStatusOnline from 'react-icons/hi'
+import {HiOutlineStatusOnline} from 'react-icons/hi'
 import styles from '../[id]/individual.module.css'
 
 export default function ProjectPage({ params }) {
