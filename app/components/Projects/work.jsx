@@ -9,6 +9,7 @@ import third from '/public/third.png'
 import fourth from '/public/fourth.png'
 import fifth from '/public/fifth.png'
 import {FaGithubAlt} from 'react-icons/fa'
+import Link from 'next/link'
 
 export default function Projects() {
   const [projects, useSetProjects] = useState([
@@ -45,7 +46,7 @@ export default function Projects() {
       title: 'Assignment-5',
       discription: 'Portfolio made with Nextjs',
       img: fifth,
-      href:'https://github.com/NishaSaraswat07/nexjs-Portfolio-.git',
+      href:'https://github.com/NishaSaraswat07/nextjsPortfolio.git'
     },
   ]);
 
@@ -68,7 +69,9 @@ export default function Projects() {
           key={project.projectNo}
             >
               <div className={styles.cardContent}>
-                <Image src={project.img} alt="project image" width={230} height={200} style={{borderRadius:15}} priority/>
+                <Link href={`/projects/project${project.projectNo}`}>
+                  <Image src={project.img} alt="project image" width={230} height={200} style={{borderRadius:15}} priority/>
+                </Link>
                 <div
                 className={styles.cardDetails}
                 >
