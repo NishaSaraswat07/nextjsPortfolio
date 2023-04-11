@@ -1,17 +1,22 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { motion } from 'framer-motion'
-import styles from './page.module.css'
-import Footer from './components/Footer/footer'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import { motion } from 'framer-motion';
+import styles from './page.module.css';
+import Footer from './components/Footer/footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <motion.div initial={{ y: '100%' }} animate={{ y: 'calc(65vw - 100%)' }} transition={{ duration: 2 }} className={styles.iconsContainer}>
+      <motion.div
+        initial={{ y: '100%' }}
+        animate={{ y: 'calc(65vw - 100%)' }}
+        transition={{ duration: 2 }}
+        className={styles.iconsContainer}
+      >
         <Footer />
         <div className={styles.vl} />
       </motion.div>
@@ -25,7 +30,13 @@ export default function Home() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <Image src="/picnisha.png" alt="my pic" width={260} height={260} priority />
+        <Image
+          src="/picnisha.png"
+          alt="my pic"
+          width={260}
+          height={260}
+          priority
+        />
         <motion.h2
           initial={{ x: '100%' }}
           animate={{ x: 'calc(30vw - 100%)' }}
@@ -36,5 +47,5 @@ export default function Home() {
         <motion.p>I am a frontend developer</motion.p>
       </motion.div>
     </main>
-  )
+  );
 }

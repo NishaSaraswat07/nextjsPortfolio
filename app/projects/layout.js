@@ -1,5 +1,5 @@
-import Footer from '../components/Footer/footer'
-import styles from '../components/Projects/project.module.css'
+import Footer from '../components/Footer/footer';
+import styles from '../components/Projects/project.module.css';
 
 export default function ProjectPageLayout({ children }) {
   return (
@@ -9,6 +9,5 @@ export default function ProjectPageLayout({ children }) {
         <Footer />
       </div>
     </>
-
-  )
+  );
 }

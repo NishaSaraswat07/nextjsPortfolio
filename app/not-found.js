@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
 function Pagenotfound() {
   return (
@@ -12,6 +12,6 @@ function Pagenotfound() {
         <p>Please go back Home</p>
       </Link>
     </div>
-  )
+  );
 }
-export default Pagenotfound
+export default Pagenotfound;

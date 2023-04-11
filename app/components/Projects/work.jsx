@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import first from '/public/first.png'
-import second from '/public/second.png'
-import third from '/public/third.png'
-import fourth from '/public/fourth.png'
-import fifth from '/public/fifth.png'
-import { FaGithubAlt } from 'react-icons/fa'
-import Link from 'next/link'
-import styles from './project.module.css'
+import { useState } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import first from '/public/first.png';
+import second from '/public/second.png';
+import third from '/public/third.png';
+import fourth from '/public/fourth.png';
+import fifth from '/public/fifth.png';
+import { FaGithubAlt } from 'react-icons/fa';
+import Link from 'next/link';
+import styles from './project.module.css';
 
 export default function Projects() {
   const [projects, useSetProjects] = useState([
@@ -70,19 +70,32 @@ export default function Projects() {
           >
             <div className={styles.cardContent}>
               <Link href={`/projects/project${project.projectNo}`}>
-                <Image src={project.img} alt="project image" width={230} height={200} style={{ borderRadius: 15 }} priority />
+                <Image
+                  src={project.img}
+                  alt="project image"
+                  width={230}
+                  height={200}
+                  style={{ borderRadius: 15 }}
+                  priority
+                />
               </Link>
-              <div
-                className={styles.cardDetails}
-              >
+              <div className={styles.cardDetails}>
                 <p>{project.title}</p>
                 <p>{project.discription}</p>
-                <a href={project.href} alt="link to github" label="github" target="_blank" rel="noreferrer"><FaGithubAlt /></a>
+                <a
+                  href={project.href}
+                  alt="link to github"
+                  label="github"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithubAlt />
+                </a>
               </div>
             </div>
           </motion.div>
-        )) }
+        ))}
       </div>
     </>
-  )
+  );
 }

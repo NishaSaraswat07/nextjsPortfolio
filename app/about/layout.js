@@ -9,6 +9,5 @@ export default function AboutPageLayout({ children }) {
         <Footer />
       </div>
     </>
-
   );
 }

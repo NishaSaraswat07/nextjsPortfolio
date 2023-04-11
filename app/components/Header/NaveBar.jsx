@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import React from 'react'
-import Navitems from './Naveitems'
+import Link from 'next/link';
+import React from 'react';
+import Navitems from './Naveitems';
 
 const MenuList = [
   {
@@ -15,7 +15,7 @@ const MenuList = [
     text: 'Projects',
     href: '/projects',
   },
-]
+];
 export default function NavBar() {
   return (
     <header>
@@ -28,15 +28,13 @@ export default function NavBar() {
         <div />
       </div>
       <div className="menu-list">
-        {
-                    MenuList.map((menu, index) => (
-                      // eslint-disable-next-line react/no-array-index-key
-                      <div key={index}>
-                        <Navitems {...menu} />
-                      </div>
-                    ))
-                }
+        {MenuList.map((menu, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <div key={index}>
+            <Navitems {...menu} />
+          </div>
+        ))}
       </div>
     </header>
-  )
+  );
 }
