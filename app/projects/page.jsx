@@ -4,7 +4,7 @@ import Work from '../components/Projects/work'
 export default function page() {
   return (
     <div>
-        <Work />
+      <Work />
     </div>
   )
 }

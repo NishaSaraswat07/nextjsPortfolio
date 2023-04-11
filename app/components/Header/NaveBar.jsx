@@ -4,41 +4,39 @@ import Navitems from './Naveitems'
 
 const MenuList = [
   {
-    text:'Home',
-    href:'/',
+    text: 'Home',
+    href: '/',
   },
   {
-    text:'About',
-    href:'/about',
+    text: 'About',
+    href: '/about',
   },
   {
-    text:'Projects',
-    href:'/projects',
+    text: 'Projects',
+    href: '/projects',
   },
 ]
 export default function NavBar() {
   return (
     <header>
-        <nav className="navitem">
-            <Link href="/" />
-        </nav>
-        <div className="navBarMenu">
-            <div />
-            <div />
-            <div />
-        </div>
-        <div className="menu-list">
-                {
-                    MenuList.map((menu, index)=>{
-                      return (
-                        // eslint-disable-next-line react/no-array-index-key
-                        <div key={index}>
-                            <Navitems {...menu} />
-                        </div>
-                      )
-                    })
+      <nav className="navitem">
+        <Link href="/" />
+      </nav>
+      <div className="navBarMenu">
+        <div />
+        <div />
+        <div />
+      </div>
+      <div className="menu-list">
+        {
+                    MenuList.map((menu, index) => (
+                      // eslint-disable-next-line react/no-array-index-key
+                      <div key={index}>
+                        <Navitems {...menu} />
+                      </div>
+                    ))
                 }
-        </div>
+      </div>
     </header>
   )
 }

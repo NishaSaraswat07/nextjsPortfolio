@@ -1,8 +1,8 @@
 import React from 'react'
+import { TiHtml5 } from 'react-icons/ti'
+import { FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa'
+import { BsFiletypeCss } from 'react-icons/bs'
 import styles from './about.module.css'
-import {TiHtml5} from 'react-icons/ti'
-import {FaJsSquare, FaReact, FaNodeJs} from 'react-icons/fa'
-import {BsFiletypeCss} from 'react-icons/bs'
 
 export default function About() {
   return (
@@ -14,8 +14,10 @@ export default function About() {
         </div>
         <h2>Nisha</h2>
         <div className={styles.details}>
-          <p> Currently pursuing Frontend Devloper course from Changemaker Education
-           Till now i have learnt html,css and javascript and the journey is still on and trying my best to learn React javascript framework.
+          <p>
+            {' '}
+            Currently pursuing Frontend Devloper course from Changemaker Education
+            Till now i have learnt html,css and javascript and the journey is still on and trying my best to learn React javascript framework.
           </p>
           <div className={styles.skills}>
             <h3>
